@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <h4>1)</h4>
+    first number:<label for="first_N"></label><input id="first_N" type="number">
+    second number: <label for="second_N"></label><input id="second_N" type="number">
+    <button onclick="calculateNumbers()">calculate</button>
+    <p id="result"></p>
+</div>
+<div>
+    <h4>2)</h4>
+    change seconds to format:<label for="seconds"></label><input id="seconds" type="text">
+    <button onclick="translateFromTimeFormatToSeconds()">change</button>
+    <p id="format_show"></p>
+    change from format to seconds: <label for="time"></label><input id="time" type="time" value="00:00:00" step="1">
+    <button onclick="translateFromSecondsToTimeFormat()">change</button>
+    <p id="seconds_show"></p>
+    <h4>3)</h4>
+    <label for="first_date"></label><input id="first_date" step="1" type="datetime-local">
+    <label for="second_date"></label><input id="second_date" step="1" type="datetime-local">
+    <button onclick="calculateTimeSpan()">Calculate the time span</button>
+    <p id="result_of_calculation"></p>
+    <h4>5)</h4>
+    <label for="link_finder"></label><textarea name="" id="link_finder" cols="100" rows="5" onblur="findLinksAndIPs()"></textarea>
+    <ol id="links"></ol>
+    <h4>6)</h4>
+    <label for="sting_to_find_in"></label><textarea name="" id="sting_to_find_in" cols="30" rows="1"></textarea>
+    <label for="find_in_string"></label><input id="find_in_string" type="text">
+    <button onclick="findThePartInTheString()">find part</button>
+    <p id="found_string"></p>
+</div>
+<hr>
+<div>
+    <h4>4)</h4>
+    enter width of Chess board: <label for="chess_width"></label><input id="chess_width" type="number">
+    enter height of Chess board: <label for="chess_height"></label><input id="chess_height" type="number">
+    <button onclick="createAChessboard()">create chess board</button>
+    <p id="chess_error"></p>
+    <div id="chess_board" style="border: solid;font-size: 0;display: none"></div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
