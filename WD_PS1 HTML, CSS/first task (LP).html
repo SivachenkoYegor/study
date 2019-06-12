@@ -19,13 +19,13 @@
             <p class="name_signs"><i class="fas fa-plus"></i></p>
         </a>
     </div>
-    <div class="header_items">
-        <a href=""><h3>Products</h3></a>
-        <a href=""><h3>About us</h3></a>
-        <a href=""><h3>Contact us</h3></a>
+    <div  class="header_items">
+        <a href="#product"><h3>Products</h3></a>
+        <a href="#about_us"><h3>About us</h3></a>
+        <a href="#contact"><h3>Contact us</h3></a>
     </div>
 </div>
-<div class="content_part1">
+<div id="product" class="content_part1">
     <div class="content_part1_content img_part">
         <img src="iphone-x-png.png" alt="">
     </div>
@@ -37,7 +37,7 @@
             Doloribus enim excepturi fuga iste maiores optio quam repudiandae, temporibus velit vero.</h3>
     </div>
 </div>
-<div class="skills">
+<div id="about_us" class="skills">
     <div class="skills_area">
         <div class="skills_content">
             <div class="circle">
@@ -62,17 +62,29 @@
         </div>
     </div>
 </div>
-<div class="contact_area">
+<div id="contact" class="contact_area">
     <h1>Contact us!</h1>
     <div class="contact_form">
-        <input placeholder="Type here your name, please" type="text">
-        <input placeholder="Type here your email, please" type="email">
-        <input placeholder="Type here your phone, please" type="tel">
-        <input class="contact_area_text" placeholder="Ask your question" type="text">
+        <label>
+            <input placeholder="Type here your name, please" type="text">
+        </label>
+        <label>
+            <input placeholder="Type here your email, please" type="email">
+        </label>
+        <label>
+            <input placeholder="Type here your phone, please" type="tel">
+        </label>
+        <label>
+            <input class="contact_area_text" placeholder="Ask your question" type="text">
+        </label>
     </div>
     <button class="contact_btn">
         Send email!
     </button>
 </div>
+<p id="back-top"><a href="#top"><span></span></a></p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="jquery.malihu.PageScroll2id.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

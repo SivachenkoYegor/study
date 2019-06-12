@@ -196,3 +196,24 @@ a {
 .contact_area_text{
     height: 70px !important;
 }
+#back-top{
+    position:fixed;
+    bottom:15px;
+    right:7%;
+}
+
+#back-top span{
+    width:64px;
+    height:64px;
+    display:block;
+    margin-bottom:7px;
+    background: url(up.png) no-repeat center center;
+    background-size: cover;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    border-radius:25px;
+    -webkit-transition:1s;
+    -moz-transition:1s;
+    transition:1s;
+}
+#back-top a:hover span{background-color:silver}
