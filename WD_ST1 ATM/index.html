@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<div id="log_in">
+    <p>Login</p>
+    <input type="text" placeholder="id">
+    <input type="password" placeholder="password">
+    <button id="authorization">Login</button>
+    <h3>Wrong personal information</h3>
+</div>
+<div id="log_out">
+    <button id="logout"><h3>Log out <i class="fas fa-sign-out-alt"></i></h3></button>
+</div>
+<div id="container">
+    <div style="display: none" id="users_info">
+        <div class="moneyInBank"></div>
+        <h3></h3>
+        <div id="put_money_container">
+            <h3>Here you can put money to your account</h3>
+            <input id="put_money" type="number">
+            <button id="btn_put_money">Put money</button>
+            <h3 style="display: none;color: red;" id="put_money_error"></h3>
+        </div>
+        <div id="get_money_container">
+            <h3>Here you can get money from your account</h3>
+            <input id="get_money" type="number">
+            <button id="btn_get_money">Get money</button>
+            <h3 style="display: none;color: red;" id="get_money_error"></h3>
+        </div>
+    </div>
+    <div style="display: none" id="admin_info">
+        <div class="moneyInBank"></div>
+        <h3>Put money to bank</h3>
+        <input id="put_to_banks_bill" type="number">
+        <h3></h3>
+        <button id="put_money_to_bank">Put money to the banks bill</button>
+        <h3 style="color: red;display: none" id="banks_bill_error"></h3>
+        <br>
+        <button id="logs_btn">Show Logs</button>
+        <ol id="logs"></ol>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="atm-template.js"></script>
+</body>
+</html>
